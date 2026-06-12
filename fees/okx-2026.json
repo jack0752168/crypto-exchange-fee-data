@@ -1,0 +1,32 @@
+{
+  "exchange": "OKX",
+  "as_of": "2026-06",
+  "source": "OKX published fee schedule (2026-04-08 revision); cross-checked at https://www.jacktrader.xyz/en/blog/okx-vip-fee-tiers-2026.html",
+  "qualification": {
+    "rule": "VIP tier is the better of: 30-day trading volume OR asset balance held on platform (dual qualification — unique vs Binance volume-only ladder)",
+    "note": "One shared VIP level covers spot and futures, with separate fee schedules per market"
+  },
+  "futures": {
+    "unit": "percent",
+    "tiers": [
+      {"tier": "Regular", "vol_min_usd": 0,           "maker": 0.0200,  "taker": 0.0500},
+      {"tier": "VIP 1",   "vol_min_usd": 5000000,     "maker": 0.0160,  "taker": 0.0450},
+      {"tier": "VIP 2",   "vol_min_usd": 10000000,    "maker": 0.0150,  "taker": 0.0360},
+      {"tier": "VIP 3",   "vol_min_usd": 50000000,    "maker": 0.0100,  "taker": 0.0280},
+      {"tier": "VIP 4",   "vol_min_usd": 200000000,   "maker": 0.0080,  "taker": 0.0270},
+      {"tier": "VIP 5",   "vol_min_usd": 600000000,   "maker": 0.0050,  "taker": 0.0260},
+      {"tier": "VIP 6",   "vol_min_usd": 1000000000,  "maker": 0.0000,  "taker": 0.0250},
+      {"tier": "VIP 7",   "vol_min_usd": 1500000000,  "maker": -0.0020, "taker": 0.0200},
+      {"tier": "VIP 8",   "vol_min_usd": 2000000000,  "maker": -0.0050, "taker": 0.0200},
+      {"tier": "VIP 9",   "vol_min_usd": 20000000000, "maker": -0.0050, "taker": 0.0150}
+    ]
+  },
+  "discounts": {
+    "okb": "OKB holdings are woven into tier/holdings qualification rather than a flat fee toggle"
+  },
+  "rebate": {
+    "max_share": 0.40,
+    "note": "Sub-broker rebate of up to 40% of the net fee, stacks on top of any VIP tier; depends on partner tier and platform policy, not guaranteed",
+    "example_channel": "https://www.promooboost.com/join/TRADERJACK"
+  }
+}

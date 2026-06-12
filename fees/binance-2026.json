@@ -1,0 +1,50 @@
+{
+  "exchange": "Binance",
+  "as_of": "2026-06",
+  "source": "Binance published fee schedule; cross-checked at https://www.jacktrader.xyz/en/blog/binance-vip-fee-tiers-2026.html",
+  "qualification": {
+    "rule": "VIP tier requires (30d spot volume OR 30d futures volume gate) AND minimum BNB balance; recalculated daily at 00:00 UTC on a rolling 30-day window",
+    "spot_volume_counts": ["spot", "margin", "convert", "otc"],
+    "bnb_balance_basis": "previous day average daily balance"
+  },
+  "spot": {
+    "unit": "percent",
+    "tiers": [
+      {"tier": "Regular", "spot_vol_min_usd": 0,          "futures_vol_min_usd": null,        "min_bnb": 0,    "maker": 0.1000, "taker": 0.1000},
+      {"tier": "VIP 1",   "spot_vol_min_usd": 1000000,    "futures_vol_min_usd": 15000000,    "min_bnb": 25,   "maker": 0.0900, "taker": 0.1000},
+      {"tier": "VIP 2",   "spot_vol_min_usd": 5000000,    "futures_vol_min_usd": 75000000,    "min_bnb": 100,  "maker": 0.0800, "taker": 0.1000},
+      {"tier": "VIP 3",   "spot_vol_min_usd": 20000000,   "futures_vol_min_usd": 250000000,   "min_bnb": 250,  "maker": 0.0420, "taker": 0.0600},
+      {"tier": "VIP 4",   "spot_vol_min_usd": 75000000,   "futures_vol_min_usd": 600000000,   "min_bnb": 500,  "maker": 0.0420, "taker": 0.0540},
+      {"tier": "VIP 5",   "spot_vol_min_usd": 150000000,  "futures_vol_min_usd": 1500000000,  "min_bnb": 1000, "maker": 0.0360, "taker": 0.0500},
+      {"tier": "VIP 6",   "spot_vol_min_usd": 400000000,  "futures_vol_min_usd": 3000000000,  "min_bnb": 1750, "maker": 0.0300, "taker": 0.0500},
+      {"tier": "VIP 7",   "spot_vol_min_usd": 800000000,  "futures_vol_min_usd": 6000000000,  "min_bnb": 3000, "maker": 0.0240, "taker": 0.0460},
+      {"tier": "VIP 8",   "spot_vol_min_usd": 2000000000, "futures_vol_min_usd": 15000000000, "min_bnb": 4500, "maker": 0.0180, "taker": 0.0400},
+      {"tier": "VIP 9",   "spot_vol_min_usd": 4000000000, "futures_vol_min_usd": 30000000000, "min_bnb": 5500, "maker": 0.0150, "taker": 0.0300}
+    ]
+  },
+  "usdm_futures": {
+    "unit": "percent",
+    "tiers": [
+      {"tier": "Regular", "futures_vol_min_usd": 0,           "maker": 0.0200, "taker": 0.0500},
+      {"tier": "VIP 1",   "futures_vol_min_usd": 15000000,    "maker": 0.0160, "taker": 0.0400},
+      {"tier": "VIP 2",   "futures_vol_min_usd": 75000000,    "maker": 0.0140, "taker": 0.0350},
+      {"tier": "VIP 3",   "futures_vol_min_usd": 250000000,   "maker": 0.0120, "taker": 0.0320},
+      {"tier": "VIP 4",   "futures_vol_min_usd": 600000000,   "maker": 0.0100, "taker": 0.0300},
+      {"tier": "VIP 5",   "futures_vol_min_usd": 1500000000,  "maker": 0.0080, "taker": 0.0270},
+      {"tier": "VIP 6",   "futures_vol_min_usd": 3000000000,  "maker": 0.0060, "taker": 0.0250},
+      {"tier": "VIP 7",   "futures_vol_min_usd": 6000000000,  "maker": 0.0040, "taker": 0.0220},
+      {"tier": "VIP 8",   "futures_vol_min_usd": 15000000000, "maker": 0.0000, "taker": 0.0170},
+      {"tier": "VIP 9",   "futures_vol_min_usd": 30000000000, "maker": 0.0000, "taker": 0.0170}
+    ]
+  },
+  "discounts": {
+    "bnb_spot": 0.25,
+    "bnb_futures": 0.10,
+    "note": "BNB discount multiplies the base rate: spot ×0.75, futures ×0.90 when paying fees in BNB"
+  },
+  "rebate": {
+    "max_share": 0.40,
+    "note": "Affiliate/sub-broker rebate of up to 40% of the net fee, stacks on top of any VIP tier and BNB discount; depends on partner tier and platform policy, not guaranteed",
+    "example_channel": "https://www.bsmkweb.cc/join?ref=MPZQWSDC"
+  }
+}
