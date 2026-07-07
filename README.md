@@ -2,7 +2,7 @@
 
 Machine-readable fee schedules for **Binance** and **OKX** — every VIP tier, spot and futures, maker/taker — plus the math for token discounts (BNB/OKB) and **fee rebates** (affiliate / sub-broker), with a small CLI calculator.
 
-Maintained by [JackTrader](https://www.jacktrader.xyz/en/), an independent Binance/OKX fee-rebate partner (not affiliated with either exchange). Data is cross-checked against the exchanges' published schedules and updated when they change.
+Maintained by [JackTrader](https://www.jacktrader.xyz/en/), an independent Binance/OKX fee-rebate partner (not affiliated with either exchange). Data is cross-checked against the exchanges' published schedules and updated when they change. **Last verified: July 2026.**
 
 ## Why this exists
 
@@ -85,6 +85,10 @@ At $10M 30-day volume the tiers already diverge: Binance futures stays Regular (
 - [Binance fee calculator 2026 — every tier + rebate stacking](https://www.jacktrader.xyz/en/blog/binance-fee-calculator-2026.html)
 - [What a crypto fee rebate is and how to claim it safely](https://www.jacktrader.xyz/en/blog/crypto-fee-rebate-explained.html)
 - [Grid-bot fee optimization](https://www.jacktrader.xyz/en/blog/grid-bot-fee-optimization.html)
+- [OKX sub-broker & affiliate program 2026 — commission tiers & how it settles](https://www.jacktrader.xyz/en/blog/okx-sub-broker-affiliate-program.html)
+- [Binance affiliate program 2026 — requirements & commission](https://www.jacktrader.xyz/en/blog/binance-affiliate-program-requirements.html)
+- [Binance vs OKX affiliate program — honest side-by-side](https://www.jacktrader.xyz/en/blog/binance-vs-okx-affiliate-program.html)
+- [Free embeddable fee & rebate calculator](https://www.jacktrader.xyz/en/blog/binance-fee-calculator-2026.html#embed)
 
 ## Getting the rebate
 

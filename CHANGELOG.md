@@ -23,3 +23,7 @@ when the exchange changed them.
 
 Spotted a stale rate? Open a PR against the JSON in `fees/` — the goal is one
 community-maintained source of truth. CI will validate your change automatically.
+
+## 2026-07-07
+- Verified fee schedules against live Binance/OKX pages (July 2026).
+- Added affiliate/sub-broker program references and free embeddable calculator link.
